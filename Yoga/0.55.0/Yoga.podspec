@@ -26,8 +26,8 @@ spec.compiler_flags = [
 ]
 
 spec.platform = :ios, "8.0"
-source_files = 'yoga/**/*.{cpp,h}'
-
-spec.source_files = 'ReactCommon/yoga/yoga/*.{c,h}'
+  source_files = 'yoga/**/*.{cpp,h}'
+  source_files = File.join('ReactCommon/yoga', source_files)
+  spec.source_files = source_files
 
 end
